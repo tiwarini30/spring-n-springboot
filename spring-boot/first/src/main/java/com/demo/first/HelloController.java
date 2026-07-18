@@ -6,11 +6,11 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
-@RestController
+@RestController // this annotaion show to build rest api 
 @RequestMapping("/api")
 public class HelloController {
 
-    @GetMapping("/hello")
+    @GetMapping("/hello") // if we visit localhost:8080/api/hello then display Hello world
     public String sayHello() {
         return "Hello World!";
     }
